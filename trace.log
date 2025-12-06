@@ -1,0 +1,100 @@
+7014  execve("../auditor", ["../auditor"], 0x7ffe5e14dff0 /* 54 vars */) = 0 <0.000491>
+7014  brk(NULL)                         = 0x5579da4a9000 <0.000184>
+7014  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd4e3a6a000 <0.000192>
+7014  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory) <0.000184>
+7014  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3 <0.000182>
+7014  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=71239, ...}, AT_EMPTY_PATH) = 0 <0.002201>
+7014  mmap(NULL, 71239, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fd4e3a58000 <0.004198>
+7014  close(3)                          = 0 <0.000323>
+7014  openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3 <0.000239>
+7014  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20t\2\0\0\0\0\0"..., 832) = 832 <0.000235>
+7014  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784 <0.002321>
+7014  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1926232, ...}, AT_EMPTY_PATH) = 0 <0.003159>
+7014  pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784 <0.000206>
+7014  mmap(NULL, 1974096, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fd4e3876000 <0.000209>
+7014  mmap(0x7fd4e389c000, 1400832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7fd4e389c000 <0.000204>
+7014  mmap(0x7fd4e39f2000, 339968, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17c000) = 0x7fd4e39f2000 <0.000194>
+7014  mmap(0x7fd4e3a45000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1cf000) = 0x7fd4e3a45000 <0.000199>
+7014  mmap(0x7fd4e3a4b000, 53072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fd4e3a4b000 <0.000188>
+7014  close(3)                          = 0 <0.000179>
+7014  mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd4e3873000 <0.000184>
+7014  arch_prctl(ARCH_SET_FS, 0x7fd4e3873740) = 0 <0.000179>
+7014  set_tid_address(0x7fd4e3873a10)   = 7014 <0.000179>
+7014  set_robust_list(0x7fd4e3873a20, 24) = 0 <0.000289>
+7014  rseq(0x7fd4e3874060, 0x20, 0, 0x53053053) = 0 <0.000181>
+7014  mprotect(0x7fd4e3a45000, 16384, PROT_READ) = 0 <0.000188>
+7014  mprotect(0x5579c38f3000, 4096, PROT_READ) = 0 <0.000192>
+7014  mprotect(0x7fd4e3a9d000, 8192, PROT_READ) = 0 <0.000192>
+7014  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0 <0.000179>
+7014  munmap(0x7fd4e3a58000, 71239)     = 0 <0.000311>
+7014  newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}, AT_EMPTY_PATH) = 0 <0.000184>
+7014  getrandom("\x20\x7a\xe6\x95\xf2\x24\x60\x32", 8, GRND_NONBLOCK) = 8 <0.000181>
+7014  brk(NULL)                         = 0x5579da4a9000 <0.000183>
+7014  brk(0x5579da4ca000)               = 0x5579da4ca000 <0.000182>
+7014  write(1, "\320\220\320\243\320\224\320\230\320\242 \320\221\320\225\320\227\320\237\320\225\320\232\320\230 \320\244\320\220\320\231"..., 58) = 58 <0.000207>
+7014  write(1, "\320\232\320\260\321\202\320\260\320\273\320\276\320\263: ./\n", 19) = 19 <0.000212>
+7014  write(1, "\320\240\320\265\320\266\320\270\320\274: \320\235\320\265\321\200\320\265\320\272\321\203\321\200\321\201\320\270\320\262"..., 40) = 40 <0.000255>
+7014  write(1, "\320\250\320\273\321\217\321\205 \320\264\320\276 \321\204\320\260\320\271\320\273\321\203        "..., 107) = 107 <0.000247>
+7014  write(1, "--------------------------------"..., 96) = 96 <0.000233>
+7014  openat(AT_FDCWD, "./", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3 <0.000215>
+7014  newfstatat(3, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0 <0.000221>
+7014  getdents64(3, 0x5579da4a96e0 /* 7 entries */, 32768) = 216 <0.000197>
+7014  newfstatat(AT_FDCWD, "./trace.log", {st_mode=S_IFREG|0644, st_size=3834, ...}, 0) = 0 <0.000182>
+7014  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4 <0.000194>
+7014  connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000194>
+7014  close(4)                          = 0 <0.000185>
+7014  socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4 <0.000184>
+7014  connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory) <0.000364>
+7014  close(4)                          = 0 <0.000184>
+7014  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=569, ...}, 0) = 0 <0.001011>
+7014  newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0 <0.000185>
+7014  openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 4 <0.000014>
+7014  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=569, ...}, AT_EMPTY_PATH) = 0 <0.000006>
+7014  read(4, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 569 <0.000006>
+7014  read(4, "", 4096)                 = 0 <0.000005>
+7014  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=569, ...}, AT_EMPTY_PATH) = 0 <0.000006>
+7014  close(4)                          = 0 <0.000006>
+7014  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4 <0.000009>
+7014  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2099, ...}, AT_EMPTY_PATH) = 0 <0.000006>
+7014  lseek(4, 0, SEEK_SET)             = 0 <0.000005>
+7014  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 2099 <0.000006>
+7014  close(4)                          = 0 <0.000005>
+7014  write(1, "./trace.log                     "..., 104) = 104 <0.000056>
+7014  newfstatat(AT_FDCWD, "./syscall_tracer.c", {st_mode=S_IFREG|0644, st_size=11099, ...}, 0) = 0 <0.000007>
+7014  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=569, ...}, 0) = 0 <0.000006>
+7014  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4 <0.000008>
+7014  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2099, ...}, AT_EMPTY_PATH) = 0 <0.000006>
+7014  lseek(4, 0, SEEK_SET)             = 0 <0.000004>
+7014  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 2099 <0.000005>
+7014  close(4)                          = 0 <0.000005>
+7014  write(1, "./syscall_tracer.c              "..., 104) = 104 <0.000047>
+7014  newfstatat(AT_FDCWD, "./bad", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0 <0.000007>
+7014  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=569, ...}, 0) = 0 <0.000006>
+7014  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4 <0.000008>
+7014  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2099, ...}, AT_EMPTY_PATH) = 0 <0.000026>
+7014  lseek(4, 0, SEEK_SET)             = 0 <0.000004>
+7014  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 2099 <0.000005>
+7014  close(4)                          = 0 <0.000005>
+7014  write(1, "./bad                           "..., 176) = 176 <0.000051>
+7014  newfstatat(AT_FDCWD, "./.vscode", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0 <0.001705>
+7014  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=569, ...}, 0) = 0 <0.000016>
+7014  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4 <0.000014>
+7014  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2099, ...}, AT_EMPTY_PATH) = 0 <0.000005>
+7014  lseek(4, 0, SEEK_SET)             = 0 <0.000004>
+7014  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 2099 <0.000005>
+7014  close(4)                          = 0 <0.000005>
+7014  write(1, "./.vscode                       "..., 104) = 104 <0.000060>
+7014  newfstatat(AT_FDCWD, "./syscall_profiler", {st_mode=S_IFREG|0755, st_size=17376, ...}, 0) = 0 <0.000006>
+7014  newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=569, ...}, 0) = 0 <0.000005>
+7014  openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 4 <0.000007>
+7014  newfstatat(4, "", {st_mode=S_IFREG|0644, st_size=2099, ...}, AT_EMPTY_PATH) = 0 <0.000004>
+7014  lseek(4, 0, SEEK_SET)             = 0 <0.000003>
+7014  read(4, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 2099 <0.000006>
+7014  close(4)                          = 0 <0.000004>
+7014  write(1, "./syscall_profiler              "..., 177) = 177 <0.000037>
+7014  getdents64(3, 0x5579da4a96e0 /* 0 entries */, 32768) = 0 <0.000004>
+7014  close(3)                          = 0 <0.000007>
+7014  write(1, "\n", 1)                 = 1 <0.000017>
+7014  write(1, "\320\220\320\243\320\224\320\230\320\242 \320\227\320\220\320\222\320\225\320\240\320\250\320\225\320\235\320\236\n", 30) = 30 <0.000026>
+7014  exit_group(0)                     = ?
+7014  +++ exited with 0 +++
