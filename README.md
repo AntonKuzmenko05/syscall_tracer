@@ -120,6 +120,7 @@ sudo setcap cap_sys_ptrace=eip ./syscall_profiler
   # Arch Linux
   sudo pacman -S audit
   ```
+<img width="998" height="431" alt="image" src="https://github.com/user-attachments/assets/169a6410-050f-42d6-9281-ae5a66c22e4e" />
 
 **Примітка:** Якщо `ausyscall` недоступний, програма автоматично використовує вбудовану таблицю системних викликів.
 
