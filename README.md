@@ -249,7 +249,7 @@ MIT License
 
 ## Автор
 
-Syscall Profiler - навчальний проект для вивчення ptrace та профайлінгу системних викликів Linux.
+[Кузьменко Антон](https://github.com/AntonKuzmenko05)
 
 ## Корисні посилання
 
